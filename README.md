@@ -69,6 +69,36 @@ limita quién puede usar o consultar los datos biométricos.
 En biometría se basa en proteger los datos, verificar que el usuario es real y evitar accesos no autorizados.
 
 # Parte de Diseño
-2
+2 Plantee una solución paso a paso de la situación descrita con lo aprendido en clase:
+
+Bitcoin opera sobre una red descentralizada de nodos que ejecutan el software de referencia Bitcoin Core,
+cuyo código fuente se aloja en un repositorio público (GitHub). Tanto los nodos como el repositorio son
+blancos atractivos para adversarios: comprometer un nodo puede permitir robar fondos, realizar ataques de
+doble gasto o censurar transacciones; atacar el repositorio puede introducir vulnerabilidades en el propio
+protocolo (ataque a la cadena de suministro). Los estudiantes deberán aplicar una metodología de hacking
+ético completa (reconocimiento → escaneo → explotación → post-explotación) para identificar vectores de
+ataque realistas y diseñar contramedidas.
+# Objetivo
+Diseñar una estrategia de defensa integral (solución) que mitigue los riesgos identificados, aplicando la metodología de hacking ético en un entorno controlado de laboratorio.
+
+# Informe:
+Se tiene como objetivo proponer una metodologia de hacking etico para identificar posibles vectores de ataque, evaluar su impacto y dar algunas estrategias de prevencion.
+
+Como primer paso ponemos el reconocimiento  donde se identifica los activos criticos 
+- Nodos Bitcoin expuestos en red (IP, puertos)
+- Repositorio Bitcoin Core en GitHub
+- Servicios asociados (RPC, P2P)
+También se debe tener en cuenta los posibles vectores , en este caso
+- Acceso no autorizado
+- Ataques a la cadena de suministro (código)
+- Doble gasto o manipulación de transacciones
+
+Como paso 2 se podría realizar el escaneo realizando pruebas en laboratorio como:
+-Escaneo de puertos y servicios, podríamos ejecutarlo a través de Nmap 
+- Detección de versiones vulnerables de Bitcoin Core
+- Análisis de configuraciones (RPC abierto, credenciales débiles)
+
+- En 
+
 
 
