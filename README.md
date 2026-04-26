@@ -84,7 +84,7 @@ Diseñar una estrategia de defensa integral (solución) que mitigue los riesgos 
 # Informe:
 Se tiene como objetivo proponer una metodologia de hacking etico para identificar posibles vectores de ataque, evaluar su impacto y dar algunas estrategias de prevencion.
 
-Como primer paso ponemos el reconocimiento  donde se identifica los activos criticos 
+# Como primer paso ponemos el reconocimiento  donde se identifica los activos criticos 
 - Nodos Bitcoin expuestos en red (IP, puertos)
 - Repositorio Bitcoin Core en GitHub
 - Servicios asociados (RPC, P2P)
@@ -93,12 +93,31 @@ También se debe tener en cuenta los posibles vectores , en este caso
 - Ataques a la cadena de suministro (código)
 - Doble gasto o manipulación de transacciones
 
-Como paso 2 se podría realizar el escaneo realizando pruebas en laboratorio como:
+# Como paso 2 se podría realizar el escaneo realizando pruebas en laboratorio como:
 -Escaneo de puertos y servicios, podríamos ejecutarlo a través de Nmap 
 - Detección de versiones vulnerables de Bitcoin Core
 - Análisis de configuraciones (RPC abierto, credenciales débiles)
 
-- En 
+# En paso 3 explotación (controlada)
+Simulo ataques para validar riesgos:
+Intento de acceso al servicio RPC
+Generación de tráfico malicioso para ver comportamiento del nodo
+Análisis de dependencias del repositorio (posibles vulnerabilidades)
 
+# 4. Post-explotación
+Evalúo impacto real:
+Escalada de privilegios en el nodo
+Acceso a información sensible (claves, transacciones)
+Persistencia en el sistema comprometido
+
+Se plantean las siguientes Estrategia de defensa
+-Hardening del nodo (cerrar puertos, limitar RPC)
+-Uso de autenticación fuerte y cifrado (TLS)
+-Actualización constante del software
+-Monitoreo de logs y detección de anomalías (SIEM/IDS)
+-Seguridad en GitHub: control de acceso, revisión de código, firmas de commits
+
+# Conclusión:
+Aplicar la metodología de hacking ético permite identificar vulnerabilidades en nodos y en el repositorio, y así implementar controles de seguridad que reduzcan riesgos en la red Bitcoin.
 
 
