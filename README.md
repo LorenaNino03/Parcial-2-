@@ -1,4 +1,4 @@
-# Parcial-2-
+# Parcial-2- Miguel Angel Martín Bustos- Jeimy Lorena Niño Correa
 
 # Parte Conceptual
 1.
@@ -120,4 +120,36 @@ Se plantean las siguientes Estrategia de defensa
 # Conclusión:
 Aplicar la metodología de hacking ético permite identificar vulnerabilidades en nodos y en el repositorio, y así implementar controles de seguridad que reduzcan riesgos en la red Bitcoin.
 
-
+# Punto 3
+# Parte Empírica
+Teniendo presente lo visto de blockchain y criptografía desarrollar lo siguiente:
+# Cree una cadena de bloques con una funcionalidad de mensajes entre dos servidores y explique el paso a paso y la funcionalidad. ¿Cómo se crea un bloque?
+La idea es crear una blockchain simple donde dos servidores puedan intercambiar mensajes. Cada mensaje se guarda dentro de un bloque, y ese bloque se une a la cadena usando criptografía.
+# ¿Cómo funciona?
+-Servidor A envía un mensaje
+Ejemplo: “Hola servidor B”
+-Se crea un bloque
+-El bloque guarda:
+Número del bloque
+Mensaje
+Fecha y hora
+Hash del bloque anterior
+Hash del bloque actual
+-Se calcula el hash
+El hash es como una huella digital del bloque. Si alguien cambia el mensaje, el hash también cambia.
+El bloque se agrega a la cadena cada bloque queda conectado con el anterior.
+Esto ayuda a verificar que la información no fue modificada.
+# ¿Cómo se crea un bloque?
+Un bloque se crea juntando la información del mensaje, la fecha, el hash anterior y luego calculando un nuevo hash.
+Ejemplo básico:
+<img width="954" height="441" alt="image" src="https://github.com/user-attachments/assets/3ef24594-3003-4540-a25b-b160e32b0c1f" />
+# Ejemplo de uso
+<img width="778" height="157" alt="image" src="https://github.com/user-attachments/assets/53f11a84-faa0-4654-979b-4afb93bb6dc2" />
+# ¿Qué tipo de encriptación se maneja en blockchain?
+En blockchain se usa principalmente criptografía, no solamente encriptación.
+# Los mecanismos más comunes son:
+Hashing: se usa para crear una huella digital de cada bloque.
+Ejemplo: SHA-256.
+Criptografía asimétrica: usa una clave pública y una clave privada para firmar transacciones o mensajes.
+Ejemplo: firmas digitales.
+Podemos decir que en conclusion una blockchain permite guardar mensajes de forma ordenada, segura y verificable. Cada bloque depende del anterior, por eso si alguien cambia un dato, la cadena se rompe y se puede detectar la alteración.
